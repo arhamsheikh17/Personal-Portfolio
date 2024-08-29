@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <style>
+      /* General body styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d9d1ee; /* Lavender background color */
+      }
+
+      /* Main container */
+      .main {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Form container */
+      .contactform h1 {
+        text-align: center;
+        color: #4b0082; /* Purple color */
+        margin-bottom: 20px;
+      }
+
+      /* Form labels */
+      .form-label {
+        font-weight: bold;
+        color: #333;
+      }
+
+      /* Form input fields */
+      .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* Help text */
+      .form-text {
+        font-size: 12px;
+        color: #888;
+      }
+
+      /* Checkbox */
+      .form-check-input {
+        margin-right: 10px;
+      }
+
+      .form-check-label {
+        font-size: 14px;
+      }
+
+      /* Submit button */
+      .btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #4b0082; /* Purple color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 20px auto 0;
+      }
+
+      .btn:hover {
+        background-color: #6a0dad; /* Lighter purple on hover */
+      }
+    </style>
+  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Form</title>
+      <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+      <style>
+          /* Add some styles for the success message */
+          .success-message {
+              display: none; /* Hidden by default */
+              color: green;
+              margin-top: 20px;
+              text-align: center;
+          }
+      </style>
+  </head>
+  <body>
+     <div class="main">
+      <div class="contactform">
+          <h1>Contact me</h1>
+          <form id="contactForm">
+              <div class="mb-3">
+                  <label for="clientemail1" class="form-label">Email address</label>
+                  <input
+                      type="email"
+                      class="form-control"
+                      id="clientemail1"
+                      aria-describedby="emailHelp"
+                      required> <!-- Required attribute -->
+                  
+                  <div id="emailHelp" class="form-text">
+                      We'll never share your email & phone with anyone else.
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="clientphone" class="form-label">Password</label>
+                  <input
+                      type="password"
+                      class="form-control"
+                      id="clientphone"
+                      required /> <!-- Required attribute -->
+              </div>
+              <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient" required /> <!-- Required attribute -->
+                  <label class="form-check-label" for="isclient">
+                      I want you to work on projects with me
+                  </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="successMessage" class="success-message">
+              Submitted successfully!
+          </div>
+      </div>  
+  </div>
+  
+  <script>
+      // JavaScript to handle form submission
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          
+          // Display success message
+          document.getElementById('successMessage').style.display = 'block';
+          
+          // Optionally, clear the form after submission
+          this.reset();
+      });
+  </script>
+  </body>
+  </html>
+
+
+ 
+    
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+                           <!-- CSS Styling -->
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+                                 /* nav styling */
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 13.5px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(162, 162, 238);
+        font-size: 1.01rem;
+      }
+      main hr {
+        border: 0;
+        background: #8e89e8;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+                           /* Sections styling */
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons{
+        padding: 30px 0;
+      }
+     
+      .leftSection .btn {
+        padding: 9px;
+        background: #1e2167;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+
+
+      }
+      .rightSection img {
+        width: 80%;
+        margin: 30px 0;
+      }
+      .purple {
+        color: rgb(148, 99, 194);
+      }
+      .text-gray {
+        color: gray;
+        font-family: sans-serif;
+        font-size: 1rem;
+      }
+
+      #element {
+        color: rgb(148, 99, 194);
+      }
+
+                             /* second styling */
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        font-size: 1.4rem;
+        height: 80vh;
+      }
+      main h1 {
+        font-weight: 300;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 76vw;
+        height: 2px;
+        margin: 45px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 90px;
+      }
+      .img-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+                                  /* description styling*/
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+                     /* skills section styling */
+      .html-color {
+        color: #ff5733;
+      }
+      .css-color {
+        color: #1572b6;
+      }
+      .ts-color {
+        color: #3178c6;
+      }
+      .js-color {
+        color: #f7df1e;
+      }
+      .design-color {
+        color: #f24e1e;
+      }
+                      /* Footer styling */
+      footer{
+        background-color: #0e0e1a;
+        
+       } 
+       
+      .footer{
+        display: flex;
+        padding: 23px 122px ;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .first-footer{
+        font-size: larger;
+      }
+      .footer > div{
+        width: 220px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+
+      }
+      html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+
+
+
+    </style>
+  </head>
+  <body>
+             <!-- Link to contact.html -->
+    <a href="contact.html"></a>
+    <a href="projects.html"></a>
+    <header>
+      <nav>
+        <div class="left">Arham's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            <li>
+              <a href="#" onclick="moveToSkills()"><li>Skills</li></a>    
+            </li>
+            <li>
+              <a href="projects.html"><li>Projects</li></a>
+            </li>
+            <li>
+              <a href="contact.html"><li>Contact</li></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, Myself <span class="purple"> Arham </span>
+          <div>
+            & I'm a passionate</div>
+            <span id="element"></span>
+           <div class="buttons">
+                <a href="https://www.canva.com/design/DAGPJ7hWz74/FJK5xou3_Ge5cjD3lXcobA/edit?utm_content=DAGPJ7hWz74&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <button class="btn">Download Resume</button></a>
+                <a href="https://github.com/arhamsheikh17">
+                    <button class="btn">Visit Github</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="header_img.jpg.png" alt="" />
+        </div>
+        <!-- SKilss section  -->
+      </section>
+      <section class="secondSection" class="skills">
+        <hr />
+        <span class="text-gray">What I have done so far </span>
+        <h1 id="skills">Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="img-top" src="html2.png" alt="" />
+            <div class="vertical-title">
+              <span class="html-color">HTML</span> Developer
+            </div>
+            <div class="vertical-desc">
+              I am html developer for 1 year still I'm working with html for my better practice I have made several projects using html I have a made this website also by using html.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="CSS3_logo.png" alt="" />
+            <div class="vertical-title">
+              <span class="css-color">CSS</span>
+              <div>Developer</div>
+            </div>
+            <div class="vertical-desc">
+              I am CSS developer for 1 year still I'm working with CSS for my better practice I have made several projects using CSS I have a made this website also by using CSS.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="ts.png" alt="" />
+            <div class="vertical-title">
+              <span class="ts-color">Typescript</span> Developer
+            </div>
+            <div class="vertical-desc">
+              I am a typescript developer for 8 months I have made alot of projects like cli projects code base projects etc.Currrently I am also working with ts for better practice and making projects using ts.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="js.png" alt="" />
+            <div class="vertical-title">
+              <span class="js-color">Javascript</span> Developer
+            </div>
+            <div class="vertical-desc">
+              I am a javascript developer for 8 months I have made alot of projects like website and code base projects etc.Currrently I am also working with js for better practice and making projects using js.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="figma.png" alt="" />
+            <div class="vertical-title">
+              <span class="design-color">Design</span> Developer
+            </div>
+            <div class="vertical-desc">
+              I am also a designer as previously I have design several website using figma and fijgam and also balsamiq for wireframing of multiple projects.Where initially I started wireframing and turn it into design an also I did prototyping on figma.    
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> 
+    <!-- Footer skeleton -->
+        <footer>
+            <div class="footer">
+                <div class="first-footer">
+                    Arham's Developer Portfolio
+                </div>
+                <h2>Contact Us</h2>
+                <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/profile.php?id=100011390619766&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a></li>           <!-- Facebook Icon -->
+                  
+                  <li><a href="https://www.linkedin.com/in/arham-sheikh-20410b279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>       <!-- LinkedIn Icon -->
+                  <li><a href="https://www.instagram.com/p/C6wyF13tHXbFpPXRVwgpMLpaZlfLGsZFScq0180/?igsh=Ym1qYWVodnNpZ3Nl" target="_blank"><i class="fab fa-instagram"></i></a></li>           <!-- Instagram Icon -->
+              </ul>
+               
+         
+                    
+            <div class="footer-rights">
+                Copyright &#169; arhamsportfolio.com  |  All rights reserved  
+            </div>
+        </footer>
+                   <!-- Using JS functions and libraries -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Junior Web Developer", "Mathematician","Physicist"],
+        typeSpeed: 100,
+      });
+      function moveToSkills() {
+        document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+      }      
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" ></script>
+
+  </body>
+</html>

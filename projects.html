@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Align children in a column */
+            min-height: 100vh; /* Full height of the viewport */
+            background-color:lavender; /* Lavender background */
+            font-family: Arial, sans-serif;
+        }
+        .projects-head{
+            
+            display: flex;
+            justify-content: center; /* Center the header content */
+            align-items: center;
+            margin: 10px;
+            background-color: #4b0082; /* Dark purple color */
+            color: white;
+            font-size: 24px;
+            border-bottom: 2px solid #6a0dad; /* Bottom border for emphasis */
+        }
+        
+
+      
+
+        /* Portfolio container styles */
+        .portfolio {
+            /* max-width: 800px; Maximum width for the portfolio */
+            /* margin: 80px auto; Center the portfolio */
+            padding: 100px;
+            /* background-color: white; White background for the portfolio */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            flex-grow: 1; /* Allow the portfolio to grow and take up space */
+        }
+
+        /* Project link styles */
+        .project-link {
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: center; /* Center text within the project link */
+        }
+
+        /* Underline link styles */
+        a {
+            text-decoration: underline; /* Underline the links */
+            color: #4b0082; /* Purple color for the links */
+        }
+
+        /* Hover effect for links */
+        a:hover {
+            color: #6a0dad; /* Lighter purple on hover */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="portfolio">
+        <div class="projects-head"><h3>Projects</h3></div>
+        <div class="project-link">
+            <strong>npm projects:</strong> <a href="https://www.npmjs.com/~arhamsheikh" target="_blank">My cli projects</a>
+        </div>
+        <div class="project-link">
+            <strong>typescript projects:</strong> <a href="https://github.com/arhamsheikh17" target="_blank">My typescript projects</a>
+        </div>
+        <div class="project-link">
+            <strong>website clone:</strong> <a href="https://github.com/arhamsheikh17/Amazon-website-clone/tree/main" target="_blank">My amazon clone</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Arham. All rights reserved.
+    </footer>
+</body>
+</html>
